@@ -2,9 +2,124 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Test Template</title>
+    <title>Title</title>
+    <link rel="stylesheet" href="css/worx.css">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Rubik&display=swap" rel="stylesheet">
+
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-gap: 10px;
+            {#background-color: #40b973;#}
+            padding: 10px;
+        }
+
+        .grid-container > div {
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            padding: 20px 0;
+            font-size: 20px;
+        }
+
+        .item1 {
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+    </style>
 </head>
 <body>
-Test Template.
+
+<div class="grid-container">
+    <div class="item1">
+        <div class="navbar">
+            <a href="index.html"><img src="images/NgunnawalCountryLogo.png"></a>
+            <a href="index.html">Home</a>
+            <a href="clients.html">Clients</a>
+            <a href="employees.html">Employees</a>
+            <div class="dropdown">
+                <button class="dropbtn">Services
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="services-business.html">Business</a>
+                    <a href="services-education.html">Education</a>
+                    <a href="services-IT.html">IT</a>
+                    <a href="services-tourism.html">Tourism</a>
+                </div>
+            </div>
+            <img src="images/NgunnawalCountryBanner.png">
+        </div>
+
+    </div>
+    <div>
+        <p>
+            Elementum eu tempor mi imperdiet arcu. Tortor ante iaculis mattis, sagittis enim. Proin ipsum et vitae,
+            torquent pulvinar. Lacus cum lacinia leo scelerisque. Fusce integer in aliquam. Mollis vestibulum, eget sem
+            vel est potenti consectetur integer senectus. Sociis luctus vel accumsan augue ut nostra inceptos. Odio
+            felis est a. Sem dolor dolor purus tortor urna dictum netus tortor, augue morbi. Parturient suspendisse at
+            ullamcorper. Elementum sed condimentum per magnis luctus dictumst. Neque dictumst nulla venenatis volutpat
+            primis mi natoque habitant congue pellentesque tempus suspendisse?
+        </p>
+        <p>
+            Erat, etiam mauris hendrerit. Curabitur mollis phasellus fusce per. Aenean placerat enim nec aliquet
+            fringilla interdum hendrerit condimentum! Pulvinar rhoncus potenti dictumst nostra eget luctus dolor ante
+            amet vitae. Natoque, nisl magnis porta integer amet diam. Suspendisse urna varius dapibus mauris tincidunt
+            mauris et dictum magnis vivamus sagittis hendrerit. Massa mus montes senectus nisi sed vulputate aptent non
+            habitasse facilisi et vestibulum. Suspendisse eleifend at orci sollicitudin quam eros platea at vestibulum
+            ultricies. Vulputate nibh vivamus aenean habitasse cum. Augue eros egestas, vehicula felis dapibus quam
+            ipsum porttitor platea! Urna quisque justo sit.
+        </p>
+        <p>
+            Suscipit duis nec ridiculus luctus aptent quisque at interdum! Malesuada non odio cras nulla fames iaculis
+            morbi pretium. Sagittis turpis ridiculus turpis mus dolor donec eu placerat pulvinar amet, iaculis feugiat.
+            Amet placerat hac dictum! Eget, habitant felis cursus malesuada donec. Dui aptent sociosqu condimentum. Quis
+            sed netus viverra pulvinar aptent, taciti taciti ultrices nibh porttitor. Senectus tortor nisi turpis.
+            Platea sit lectus nibh diam dolor aptent auctor lectus velit phasellus egestas integer. Sociis, natoque
+            netus.
+        </p>
+        <p>
+            Platea convallis porta cursus suscipit aptent. Enim eleifend ut luctus lacinia curae; euismod quis. Nascetur
+            magna nam pellentesque sociosqu elit aptent cras rhoncus. Quam, enim enim mus quis tristique cum nulla
+            augue. Dis torquent non felis. Id, ad tortor elementum lacinia leo dapibus nascetur nulla semper fringilla
+            lorem. Duis lorem non adipiscing. Tristique varius praesent duis, habitant.
+        </p>
+        <p>
+            Mi litora sapien vulputate himenaeos non inceptos morbi ad. Mus class sodales urna elementum primis nostra
+            nisl; litora risus a. Orci luctus tincidunt felis. Felis facilisi purus nascetur euismod quisque in luctus
+            dictum mauris in faucibus egestas. Nibh sociosqu pretium ornare morbi sagittis nunc aenean dictum tellus
+            suscipit vulputate. Interdum mattis tellus ligula felis metus torquent. Pellentesque suspendisse justo
+            tempus euismod egestas consectetur dictum rhoncus luctus tempus platea! Quam erat eu hendrerit lobortis,
+            orci tempor. Lobortis enim sagittis augue. Metus!
+        </p>
+    </div>
+
+
+    <div>
+
+        <img src="images/Country.jpeg">
+
+    </div>
+
+
+</div>
+
+
+            <p id="datePlaceholder"></p>
+            <button onclick="insertDate()">Insert Date</button>
+
+
+<script>
+    function insertDate() {
+        var todaysDate = new Date();
+        document.getElementById("datePlaceholder").innerHTML = todaysDate;
+    }
+</script>
+
+
+<footer>
+    Copyright ©2022
+</footer>
+
 </body>
 </html>
