@@ -9,7 +9,13 @@
         <!--
         Interal CSS-- >
     </style>
+    <script src="ngunnawal.js"></script>
+    <script>
+        function confirmSubmission(form) {
+            alert("Thanks for submitting")
+        }
 
+    </script>
 </head>
 <body>
 
@@ -25,21 +31,52 @@
     <a href="gallery.html">Gallery</a>
     <a href="contact.html">Contact Us</a>
 
+    <form onsubmit="return false">
+            <input type='text' size=25 id="searchBox" name='searchBox'>
+        <button onclick="searchConfirmation(this.form)">Search</button>
+    </form>
 </div>
 
 
 <div class="grid-container"> <!-- Overall Layout -->
     <div class="full-width text-highlighting">
-        <h1 style="text-align: center">Heading</h1>
+        <h1 style="text-align: center">Contact Us</h1>
     </div>
     <div class="double-height">
-        Cell 1
+        <p>
+            Porta pharetra elit placerat nullam vitae habitasse eget justo ultricies!
+        </p>
+        <p>
+            Id aptent consequat nostra egestas iaculis lacus porta venenatis feugiat.
+        </p>
+        <p>
+            Est natoque risus sociosqu lobortis enim platea pretium quam cubilia!
+        </p>
+        <p>
+            Venenatis placerat nullam curae; purus cursus sollicitudin massa, parturient dolor.
+        </p>
     </div>
     <div>
-        Cell 2
+        <form onsubmit="return false">
+            <p>
+                <label for="inputOne">Name</label>
+                <input type='text' size=25 id="inputOne" name='inputOne'>
+            </p>
+            <p>
+                <label for="inputTwo">Email Address</label>
+                <input type='email' size=25 id="inputTwo" name='inputTwo'>
+            </p>
+            <p>
+                <label for="inputThree">Comment</label>
+                <input type='text' size=100 id="inputThree" name='inputThree'>
+            </p>
+            <button onclick="confirmSubmission(this.form)">Submit</button>
+        </form>
     </div>
     <div class="text-highlighting">
-        Cell 3
+        <p>
+            Commodo habitasse sociosqu aliquet orci fames sit ornare, urna ullamcorper.
+        </p>
     </div>
 </div>
 
